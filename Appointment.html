@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Appointment.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+  <nav class="nav1">
+    <h1>Hospital <span> Dashboard</span> </h1> 
+    <a href="#"><i class="fa-regular fa-hospital"></i></a>
+</nav>
+
+<section class="container">
+    
+
+  <div class="left">
+    <ul >
+         <div class="ul" >
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <li><a href="doctors.html">Doctors</a></li>
+         </div>
+
+          <div class="ul">
+            <i class="fa-solid fa-children"></i>
+            <li><a href="patient.html">Patients </a></li>
+          </div>
+
+          <div class="ul">
+            <i class="fa-solid fa-user-minus"></i>
+            <li><a href="Appointment.html">Appointments </a></li>
+          </div>
+        
+          <!-- <div class="ul">
+            <i class="fa-solid fa-clipboard-user"></i>
+            <li><a href="#">Add Medicine</a></li>
+          </div> -->
+
+          <div class="ul">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <li><a href="search.html">Search Data</a></li>
+          </div>
+
+          <div class="ul">
+            <i class="fa-solid fa-file-pen"></i>
+            <li><a href="update.html">Update Details</a></li>
+          </div>
+        
+    </ul>
+</div>
+        <!-- =============== right ================= -->
+
+        <div class="right">
+
+            <div class="appointments">
+                <h2>Appointments</h2>
+                <form id="appointmentForm">
+                    <label for="patientName">Patient Name:</label>
+                    <input type="text" id="patientName" required>
+    
+                    <label for="disease">Disease:</label>
+                    <select id="disease" required>
+                        <option value="flu">Flu</option>
+                        <option value="cold">Cold</option>
+                        <option value="diabetes">Diabetes</option>
+                        <option value="hypertension">Hypertension</option>
+                    </select>
+    
+                    <label for="doctor">Select Doctor:</label>
+                    <select id="doctor">
+                       <!-- Doctor optaions will be populated here -->
+                    </select>
+
+                    <input type="date"  id="date">
+                    <br>
+                    <input type="time" id="time">
+    
+                    <button type="submit" id="btn">Book Appointment</button>
+                </form>
+                
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <script src=Appointment.js></script>
+</body>
+</html>

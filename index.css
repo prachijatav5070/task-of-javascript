@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav1{
+   display: flex;
+   justify-content: space-between;  
+   align-items: center;
+   width: 100%;
+   height: 70px;
+   background-color:rgb(127, 234, 142);
+   border: 2px solid green;
+   
+}
+.nav1 h1 span{
+    color: rgb(8, 169, 78);
+}
+.nav1 a i{
+    font-size: 40px;
+    color: green;
+}
+
+
+/* container   */
+.container{
+    display: flex;
+}
+.left {
+    width: 300px;
+    background-color:rgb(127, 234, 142);
+    border: 2px solid rgb(0, 15, 0); 
+}
+.left ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    
+}
+.left .ul{
+    display: flex;
+    justify-content: center;
+}
+.left .ul li{
+    list-style: none;
+  padding-left: 20px;
+  margin: auto;
+  font-size: 20px;
+}
+.left .ul li a{
+   text-decoration: none;
+   color: rgb(9, 9, 9);
+}
+.left .ul i{
+    color: rgb(6, 50, 21);
+    font-size: 22px;
+    list-style: none;
+}
+
+h1, h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;  
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; 
+}
+button{
+    margin-top: 30px;
+}
+
+
+

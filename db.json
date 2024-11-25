@@ -1,0 +1,177 @@
+{
+  "doctors": [
+    {
+      "name": "Dr. Amit Sharma",
+      "specialty": "Cardiologist",
+      "email": "amit.sharma@example.com",
+      "contact": "+91 98765 43210",
+      "appointments": [],
+      "id": "b631"
+    },
+    {
+      "name": "Dr. Priya Singh",
+      "specialty": "Pediatrician",
+      "email": "priya.singh@example.com",
+      "contact": "+91 87654 32109",
+      "appointments": [],
+      "id": "642f"
+    },
+    {
+      "name": "Dr. Ravi Mehta",
+      "specialty": "Orthopedic",
+      "email": "ravi.mehta@example.com",
+      "contact": "+91 76543 21098",
+      "appointments": [],
+      "id": "1b27"
+    },
+    {
+      "name": "Dr. Anjali Gupta",
+      "specialty": "Gynecologist",
+      "email": "anjali.gupta@example.com",
+      "contact": "+91 65432 10987",
+      "appointments": [],
+      "id": "4f7c"
+    },
+    {
+      "name": "Dr. Neha Verma",
+      "specialty": "Dermatologist",
+      "email": "neha.verma@example.com",
+      "contact": "+91 54321 09876",
+      "appointments": [],
+      "id": "c995"
+    },
+    {
+      "name": "Dr. Vikram Joshi",
+      "specialty": "Neurologist",
+      "email": "vikram.joshi@example.com",
+      "contact": "+91 43210 98765",
+      "appointments": [],
+      "id": "51b1"
+    },
+    {
+      "name": "Dr. Sneha Iyer",
+      "specialty": "General Physician",
+      "email": "sneha.iyer@example.com",
+      "contact": "+91 32109 87654",
+      "appointments": [],
+      "id": "18a6"
+    }
+  ],
+  "patient": [
+    [
+      {
+        "title": "Mr",
+        "firstName": "Amit",
+        "lastName": "Kumar",
+        "gender": "Male",
+        "injury": "Fractured Arm",
+        "condition": "Moderate",
+        "phone": "+91 98765 43210",
+        "email": "amit.kumar@example.com",
+        "dob": "1990-05-15",
+        "city": "Delhi",
+        "address": "123, Main Street, New Delhi",
+        "consultingDoctor": "Dr. Ravi Mehta"
+      },
+      {
+        "title": "Ms",
+        "firstName": "Priya",
+        "lastName": "Sharma",
+        "gender": "Female",
+        "injury": "Sprained Ankle",
+        "condition": "Mild",
+        "phone": "+91 87654 32109",
+        "email": "priya.sharma@example.com",
+        "dob": "1995-08-22",
+        "city": "Mumbai",
+        "address": "456, Park Avenue, Mumbai",
+        "consultingDoctor": "Dr. Anjali Gupta"
+      },
+      {
+        "title": "Mrs",
+        "firstName": "Neha",
+        "lastName": "Verma",
+        "gender": "Female",
+        "injury": "Cut on Arm",
+        "condition": "Severe",
+        "phone": "+91 76543 21098",
+        "email": "neha.verma@example.com",
+        "dob": "1988-11-30",
+        "city": "Bangalore",
+        "address": "789, Oak Lane, Bangalore",
+        "consultingDoctor": "Dr. Vikram Joshi"
+      },
+      {
+        "title": "Dr",
+        "firstName": "Raj",
+        "lastName": "Singh",
+        "gender": "Male",
+        "injury": "Headache",
+        "condition": "Chronic",
+        "phone": "+91 65432 10987",
+        "email": "raj.singh@example.com",
+        "dob": "1985-01-10",
+        "city": "Hyderabad",
+        "address": "321, Maple Street, Hyderabad",
+        "consultingDoctor": "Dr. Sneha Iyer"
+      }
+    ],
+    {
+      "id": "26cb",
+      "title": "Mrs",
+      "firstName": "Prachi",
+      "lastName": "Jatav",
+      "gender": "Female",
+      "injury": "back-pain",
+      "condition": "modrate",
+      "phone": "8770262371",
+      "email": "prachijatav72@gmail.com",
+      "dob": "1998-04-02",
+      "city": "bhopal",
+      "address": "3/3 sai garden ",
+      "consultingDoctor": "Dr. Priya Singh"
+    }
+  ],
+  "Appointment": [
+    {
+      "id": "1",
+      "patientName": "Rahul ",
+      "disease": "flue",
+      "doctor": "cardio",
+      "date": "2024-10-25",
+      "time": "10:00"
+    },
+    {
+      "id": "2",
+      "patientName": "Priya Singh",
+      "disease": "cold",
+      "doctor": "pediat",
+      "date": "2024-10-26",
+      "time": "11:30"
+    },
+    {
+      "id": "3",
+      "patientName": "Aarav Patel",
+      "disease": "diabetes",
+      "doctor": "gyneco",
+      "date": "2024-10-27",
+      "time": "12:00"
+    },
+    {
+      "id": "52ba",
+      "patientName": "khilesh",
+      "disease": "cold",
+      "doctor": "1b27",
+      "date": "2024-10-26",
+      "time": "21:33"
+    },
+    {
+      "id": "eac8",
+      "patientName": "K Jatav",
+      "disease": "hypertension",
+      "doctor": "4f7c",
+      "date": "1994-03-23",
+      "time": "21:08"
+    }
+  ]
+}

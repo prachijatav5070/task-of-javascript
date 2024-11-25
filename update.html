@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #ed {
+            display: none;
+            position: absolute;
+            top: 280px;
+            width: 100%;
+            background-color: rgb(193, 241, 201);
+            z-index: 2;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #ed .name {
+           
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #ed .name input {
+            width: 200px;
+            padding: 5px;
+            margin: 5px 10px;
+        
+        
+        }
+        #list{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav1">
+        <h1>Hospital <span> Dashboard</span> </h1> 
+        <a href="#"><i class="fa-regular fa-hospital"></i></a>
+    </nav>
+
+    <section class="container">
+        
+      
+        <div class="left">
+            <ul >
+                 <div class="ul" >
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                  <li><a href="doctors.html">Doctors</a></li>
+                 </div>
+
+                  <div class="ul">
+                    <i class="fa-solid fa-children"></i>
+                    <li><a href="patient.html">Patients </a></li>
+                  </div>
+      
+                  <div class="ul">
+                    <i class="fa-solid fa-user-minus"></i>
+                    <li><a href="Appointment.html">Appointments </a></li>
+                  </div>
+                
+                  <!-- <div class="ul">
+                    <i class="fa-solid fa-clipboard-user"></i>
+                    <li><a href="#">Add Medicine</a></li>
+                  </div> -->
+      
+                  <div class="ul">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <li><a href="search.html">Search Data</a></li>
+                  </div>
+      
+                  <div class="ul">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <li><a href="update.html">Update Details</a></li>
+                  </div>
+                
+            </ul>
+      </div>
+        <!-- ---------------------right -------------------- -->
+
+        <div class="right" style="width: 100%; text-align: center;">
+           
+            <form id="ed" style="height: 400px;">
+                <div class="name">
+                    <p>Enter Id:</p>
+                    <input id="id" type="number" placeholder="Enter Id">
+                </div>
+                <div class="name">
+                    <p> Patient Name:</p>
+                    <input id="name" type="text" placeholder="Enter patient Name">
+                </div>
+                <div class="name">
+                    <p>Enter Disease:</p>
+                    <input id="disease" type="text" placeholder="Enter disease">
+                </div>
+                <div class="name">
+                    <p>Enter Doctor:</p>
+                    <input id="doctor" type="text" placeholder="Choose doctor">
+                </div>
+                <div class="name">
+                    <p>Enter Date:</p>
+                    <input id="date" type="date">
+                </div>
+                <div class="name">
+                    <p>Enter Time:</p>
+                    <input id="time" type="time">
+                </div>
+                <div>
+                    <button id="save" type="submit" style="height: 50px; width: 100px;">Save</button>
+                </div>
+            </form>
+           
+
+            <div class="list">
+                <div id="right">
+                    <div id="listDiv">
+                        <h1 id="list">Update Details of Appointments</h1>
+                    </div>
+                    <div id="show"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="update.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="doctors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hospital Dashboard</title>
+</head>
+<body>
+    <nav class="nav1">
+        <h1>Hospital <span>Dashboard</span></h1>
+        <a href="#"><i class="fa-regular fa-hospital"></i></a>
+    </nav>
+
+    <section class="container">
+        
+      <div class="left">
+        <ul >
+             <div class="ul" >
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <li><a href="doctors.html">Doctors</a></li>
+             </div>
+
+              <div class="ul">
+                <i class="fa-solid fa-children"></i>
+                <li><a href="patient.html">Patients </a></li>
+              </div>
+  
+              <div class="ul">
+                <i class="fa-solid fa-user-minus"></i>
+                <li><a href="Appointment.html">Appointments </a></li>
+              </div>
+            
+              <!-- <div class="ul">
+                <i class="fa-solid fa-clipboard-user"></i>
+                <li><a href="#">Add Medicine</a></li>
+              </div> -->
+  
+              <div class="ul">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <li><a href="search.html">Search Data</a></li>
+              </div>
+  
+              <div class="ul">
+                <i class="fa-solid fa-file-pen"></i>
+                <li><a href="update.html">Update Details</a></li>
+              </div>
+            
+        </ul>
+  </div>
+
+        <!-- =============== Right Section ================= -->
+        <div class="right">
+           <div class="doc">
+
+            <div class="container">
+              <h2>Book an Appointment</h2>
+
+              <form id="appointment-form" action="#" method="post">
+                  <label for="doctor">Select Doctor</label>
+                  <select id="doctor" name="doctor" required>
+                      <option value="b631">Dr. Amit Sharma (Cardiologist)</option>
+                      <option value="642f">Dr. Priya Singh (Pediatrician)</option>
+                      <option value="1b27">Dr. Ravi Mehta (Orthopedic)</option>
+                      <option value="4f7c">Dr. Anjali Gupta (Gynecologist)</option>
+                      <option value="c995">Dr. Neha Verma (Dermatologist)</option>
+                      <option value="51b1">Dr. Vikram Joshi (Neurologist)</option>
+                      <option value="18a6">Dr. Sneha Iyer (General Physician)</option>
+                  </select>
+
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                  <label for="contact">Your Contact Number</label>
+                  <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+                  <label for="appointment-date">Preferred Appointment Date</label>
+                  <input type="date" id="appointment-date" name="appointment-date" required>
+
+                  <label for="message">Additional Message (Optional)</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Any additional information or queries"></textarea>
+
+                  <button type="submit">Submit Appointment Request</button>
+              </form>
+          </div>
+           </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="doctors.js"></script>
+</body>
+</html>
